@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<!--<link rel='icon' type='image/png' href='/favicon.png'>-->
+	<link rel='stylesheet' href='global.css'>
+	<script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
+	<!--<link rel='stylesheet' href='build/bundle.css'>-->
+	<!--<script defer src='build/bundle.js'></script>-->
+</head>
+
+<body>
+	<div class="sidemenu">
+		<div class="btn">
+			<head>Menú</head>
+			<div><button onclick="message()" class="btmenu">Home</button></div>
+			<div><button class="btmenu">Todo</button1></div>
+			<div><button onclick="showcalc()" class="btmenu" >Calculator</button></div>
+			<div><button onclick="message1()" class="btmenu">About me</button></div>
+		</div>
+		<div>
+			<h1 id="header"></h1> 
+			<p id="parrafo"></p>
+		<div id="calc" style="display: none">
+			<div class="container">
+				<div class="calculadora">
+					<div class="display">
+						<div id="valor-anterior"></div>
+						<div id="valor-actual"></div>
+					</div>
+					<button class="col-2" onclick="display.borrarTodo()">C</button>
+					<button onclick="display.borrar()">&larr;</button>
+					<button class="operador" value="dividir">%</button>
+					<button class="numero">7</button>
+					<button class="numero">8</button>
+					<button class="numero">9</button>
+					<button class="operador" value="multiplicar">X</button>
+					<button class="numero">4</button>
+					<button class="numero">5</button>
+					<button class="numero">6</button>
+					<button class="operador" value="restar">-</button>
+					<button class="numero">1</button>
+					<button class="numero">2</button>
+					<button class="numero">3</button>
+					<button class="operador" value="sumar">+</button>
+					<button class="col-2 numero">0</button>
+					<button class="numero">.</button>
+					<button class="operador" value="igual">=</button>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+		<script>
+			function message(){
+				document.getElementById("header").innerHTML = "This is my application";
+			}
+			function message1(){
+				document.getElementById("parrafo").innerHTML = "I've programmed on C,C++,C#,PHP,HTML,CSS,VBA and SQL, I'd like to learn about programming because I really love it and I'm interested in get new skills as long as I practice new programming languages";
+			}
+			function showcalc(){
+				document.getElementById("calc").style.display = "block";
+			}
+		</script>
+</body>
+</html>

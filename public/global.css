@@ -1,0 +1,136 @@
+html, body {
+	position:flex;
+	width: 100%;
+	height: 100%;
+
+}
+
+body {
+  background-color: #333;;
+	margin: 0;
+	padding: 20px;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+	color: rgb(0,100,200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0,80,160);
+}
+
+label {
+	display: block;
+}
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #979797;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #0000001f;
+}
+input:disabled {
+	color: #ccc;
+}
+.btmenu {
+	color: #333;
+	background-color: #000000;
+	outline:none;
+  width: 200px;
+  height: 100px;
+  text-decoration-color: rgb(255, 255, 255);
+  text-underline-position: above;
+  text-shadow: #999;
+  color: white;
+}
+
+button:disabled {
+	color: #999;
+}
+
+button:not(:disabled):active {
+	background-color: #ddd;
+}
+
+button:focus {
+	border-color: #666;
+}
+.btn{
+	display: inline-block;
+	padding: 5px;
+	background : rgb(136, 136, 136);
+	text-decoration: none;
+	text-align: center;
+}
+h1{
+	color: aliceblue;
+	margin-left: 10px;
+}
+.sidemenu{
+	margin-top: 10px;
+	margin-left: 5px;
+	display: flex;
+}
+p{
+	color: rgb(212, 212, 212);
+	margin: 10px;
+}
+.col-2 {
+    grid-column: span 2;
+}
+.display {
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #363636;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #00000033;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    height: 100vh;
+}
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+#valor-actual {
+    font-size: 1.5em;
+}
+
+#valor-anterior {
+    font-size: 2em;
+}
